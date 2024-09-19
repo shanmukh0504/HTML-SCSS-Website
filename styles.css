@@ -1,13 +1,31 @@
 :root {
     font-size: 10px;
+    /* Font Sizes */
+    --font-size-h1: 4.8rem;
+    --font-size-h2: 4rem;
+    --font-size-hero-p: 1.8rem;
+    --font-size-button: 1.6rem;
+    --font-size-mobile: 1.4rem;
+    --font-size-nav: 2rem;
+    
+    /* Colors */
+    --color-primary: #553D67;
+    --color-secondary: #F64C72;
+    --color-text-light: #BBC8D4;
+    --color-text-dark: #6D7D8B;
+    --color-background: white;
+
+    /* Sizes */
+    --card-shadow: 0px 10px 15px 0px #7E616140;
 }
 
+
 h1 {
-    font-size: 4.8rem;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: var(--font-size-h2);
 }
 
 .justify {
@@ -31,25 +49,25 @@ body {
 }
 
 header {
-    color: white;
+    color: var(--color-background);
     text-align: center;
-    padding: 20px;
+    padding: var(--font-size-nav);
 }
 
 nav {
     display: flex;
     justify-content: center;
     gap: 4.5rem;
-    margin-top: 20px;
+    margin-top: var(--font-size-nav);
 }
 
 nav a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
+    font-size: var(--font-size-nav);
     font-weight: 400;
     text-align: center;
-    color: #553D67;
+    color: var(--color-primary);
 }
 
 .menu-toggle {
@@ -66,8 +84,8 @@ nav a {
 .logo {
     width: 12rem;
     height: 12rem;
-    top: 2px;
-    left: 667px;
+    top: 0.2rem;
+    left: 66.7rem;
     gap: 0px;
 }
 
@@ -75,10 +93,10 @@ nav a {
 
 /* Styles for TECHNOFEVERS */
 .techno-fevers {
-    font-size: 1.8rem;
+    font-size: var(--font-size-hero-p);
     font-weight: 700;
     text-align: center;
-    background-image: linear-gradient(to right, #F64C72 50.3%, #5c4b7c 50%);
+    background-image: linear-gradient(to right, var(--color-secondary) 50.3%, var(--color-primary) 50%);
     color: transparent;
     background-clip: text;
     margin: 0;
@@ -86,12 +104,12 @@ nav a {
 
 /* Hero Section */
 .hero {
-    background-image: url('./assets/Rectangle1.png');
+    background-image: url('./assets/Rectangle.svg');
     background-size: cover;
     background-position: center;
     min-height: 58.3rem;
     height: auto;
-    color: white;
+    color: var(--color-background);
     text-align: center;
     align-items: center;
 }
@@ -101,28 +119,28 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: var(--font-size-h1);
     font-weight: 800;
     text-align: center;
 }
 
 .hero p {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size-hero-p);
     font-weight: 700;
     text-align: center;
 }
 
 .hero input {
     width: 32rem;
-    padding: 2rem;
+    padding: var(--font-size-nav);
     height: 5.6rem;
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     border: 2px 0px 0px 0px;
     opacity: 0px;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: left;
 }
@@ -130,18 +148,18 @@ nav a {
 .hero input::placeholder {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
-    color: #BBC8D4;
+    color: var(--color-text-light);
 }
 
 .hero button {
-    width: 165px;
-    height: 56px;
+    width: 16.5rem;
+    height: 5.6rem;
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     opacity: 0px;
-    background-color: #F64C72;
-    color: white;
-    font-size: 16px;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
 }
@@ -149,26 +167,26 @@ nav a {
 /* About Us Section */
 .about-us {
     text-align: center;
-    padding: 50px 20px;
-    background-color: white;
+    padding: 5rem 2rem;
+    background-color: var(--color-background);
     max-width: 96em;
     min-height: 63.4em;
     margin: -6em auto;
-    box-shadow: 0px 10px 15px 0px #7E616140;
+    box-shadow: var(--card-shadow);
 }
 
 .about-us span {
-    font-size: 4.8rem;
+    font-size: var(--font-size-h1);
     font-weight: 400;
-    color: #5c4b7c;
-    margin-bottom: 10px;
+    color: var(--color-primary);;
+    margin-bottom: 1rem;
     display: block;
 }
 
 .underline {
     width: 15.7em;
     height: 0.2em;
-    background-color: #F64C72;
+    background-color: var(--color-secondary);
     border: none;
     margin: 0 auto 40px auto;
 }
@@ -178,13 +196,13 @@ nav a {
     text-wrap: wrap;
     max-width: 80rem;
     margin: 0 14% 5% 14%;
-    font-size: 1.8rem;
-    color: #6D7D8B;
+    font-size: var(--font-size-hero-p);
+    color: var(--color-text-dark);
 }
 
 .values {
     gap: 20rem;
-    margin-top: 45px;
+    margin-top: 4.5rem;
     position: relative;
 }
 
@@ -194,37 +212,37 @@ nav a {
 }
 
 .circle {
-    width: 49px;
-    height: 49px;
+    width: 4.9rem;
+    height: 4.9rem;
     border-radius: 50%;
-    border: 2px solid #5c4b7c;
-    background-color: white;
+    border: 2px solid var(--color-primary);;
+    background-color: var(--color-background);
     margin: 0 auto 10px;
 }
 
 .circle img {
-    width: 31px;
-    height: 19px;
+    width: 3.1rem;
+    height: 1.9rem;
 }
 
 .value-title {
     font-family: "Open Sans", sans-serif;
-    width: 106px;
-    height: 58px;
-    font-size: 18px;
+    width: 10.6rem;
+    height: 5.8rem;
+    font-size: var(--font-size-hero-p);
     font-weight: 400;
     text-align: left;
-    color: #6D7D8B;
+    color: var(--color-text-dark);
 }
 
 .horizontal-line {
     position: absolute;
-    top: 25px;
+    top: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
     width: 80rem;
     height: 1px;
-    background-color: #5c4b7c;
+    background-color: var(--color-primary);;
 }
 
 
@@ -234,22 +252,22 @@ nav a {
 
 .container h2 {
     text-align: center;
-    color: #553D67;
+    color: var(--color-primary);
 }
 
 .container-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 30px;
-    padding: 40px 20px;
+    gap: 3rem;
+    padding: var(--font-size-h2) var(--font-size-nav);
     max-width: 82vw;
     margin: 0 auto;
 }
 
 
 .card {
-    background-color: white;
-    box-shadow: 0px 10px 15px 0px #7E616140;
+    background-color: var(--color-background);
+    box-shadow: var(--card-shadow);
     padding: 1vw;
     width: 36.7rem;
     min-height: 29.6rem;
@@ -259,8 +277,8 @@ nav a {
 }
 
 .service-card {
-    background-color: white;
-    box-shadow: 0px 10px 15px 0px #7E616140;
+    background-color: var(--color-background);
+    box-shadow: var(--card-shadow);
     padding: 1vw;
     width: 36.7rem;
     min-height: 29.6rem;
@@ -269,28 +287,28 @@ nav a {
 }
 
 .icon {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
     padding-top: 3.808rem;
 }
 
 .title {
     font-size: 2.6rem;
     font-weight: normal;
-    color: #553D67;
+    color: var(--color-primary);
     margin-bottom: 1.5rem;
 }
 
 .description {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size-hero-p);
     color: #495C76B2;
 }
 
 /* Achievements Section */
 .achievements {
-    background-color: #F64C72;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
     padding: 5rem 0;
     text-align: center;
     margin-top: -13rem;
@@ -300,9 +318,9 @@ nav a {
 }
 
 .achiev-desc {
-    font-size: 1.8rem;
+    font-size: var(--font-size-hero-p);
     font-weight: 400;
-    color: white;
+    color: var(--color-background);
     flex-wrap: wrap;
     margin: 0.7% 25% 0 25%;
 }
@@ -312,9 +330,23 @@ nav a {
     margin-bottom: 10px;
 }
 
+.achievement-box {
+    display: inline-block;
+    width: auto;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 3rem;
+    padding: auto;
+    max-width: 82vw;
+    margin: auto;
+}
+
 .achievement-box p {
     font-family: Open Sans;
-    font-size: 1.4rem;
+    font-size: var(--font-size-mobile);
     font-weight: 600;
     line-height: 2.1rem;
 }
@@ -330,12 +362,12 @@ nav a {
 
 .services h2 {
     font-family: Mulish;
-    font-size: 48px;
+    font-size: var(--font-size-h1);
     font-weight: 400;
     text-align: center;
-    color: #553D67;
+    color: var(--color-primary);
     margin-top: 14%;
-    margin-bottom: 2rem;
+    margin-bottom: var(--font-size-nav);
 
 }
 
@@ -343,7 +375,7 @@ nav a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 3rem;
-    padding: 4rem 2rem;
+    padding: var(--font-size-h2) var(--font-size-nav);
     max-width: 82vw;
     margin: 0 auto;
 }
@@ -355,8 +387,8 @@ nav a {
 }
 
 .mission div {
-    background-color: #F64C72;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
     height: 67rem;
     padding: 0 10rem;
 }
@@ -366,7 +398,7 @@ nav a {
 }
 
 .mission div p {
-    font-size: 1.8rem;
+    font-size: var(--font-size-hero-p);
     font-weight: 600;
     text-align: center;
     margin-top: 3.5rem;
@@ -375,14 +407,14 @@ nav a {
 }
 
 .mission button {
-    font-size: 1.6rem;
+    font-size: var(--font-size-button);
     font-weight: 700;
     margin-top: 6.5rem;
-    padding: 1.8rem 3.6rem;
-    background-color: #F64C72;
-    border: 2px solid white;
-    border-radius: .4rem;
-    color: white;
+    padding: var(--font-size-hero-p) 3.6rem;
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-background);
+    border-radius: calc( var(--font-size-h2)/10);
+    color: var(--color-background);
     cursor: pointer;
 }
 
@@ -396,15 +428,15 @@ nav a {
     justify-content: flex-start;
     overflow-x: auto;
     gap: 3.4%;
-    padding: 4rem 2rem;
+    padding: var(--font-size-h2) var(--font-size-nav);
     max-width: 85vw;
     margin-left: 5%;
     scrollbar-width: none;
 }
 
 .teamcard {
-    background-color: white;
-    box-shadow: 0px 10px 15px 0px #7E616140;
+    background-color: var(--color-background);
+    box-shadow: var(--card-shadow);
     min-width: 33.7rem;
     min-height: 50rem;
     text-align: left;
@@ -427,26 +459,26 @@ nav a {
 
 .role {
     font-weight: 600;
-    color: #6D7D8B;
+    color: var(--color-text-dark);
     padding: 0.5%;
-    font-size: 1.4rem;
+    font-size: var(--font-size-mobile);
 }
 
 .team-desc {
     font-family: "Open Sans", sans-serif;
-    font-size: 1.6rem;
+    font-size: var(--font-size-button);
     color: #697694;
 }
 
 .team h1 {
     font-weight: 400;
-    color: #553D67;
+    color: var(--color-primary);
     position: relative;
 }
 
 .next {
     width: 78%;
-    color: #553D67;
+    color: var(--color-primary);
     font-family: Open Sans;
     font-size: 2.178rem;
     font-weight: 600;
@@ -460,7 +492,7 @@ nav a {
 
 .test h1 {
     font-weight: 400;
-    color: #553D67;
+    color: var(--color-primary);
     position: relative;
 }
 
@@ -469,15 +501,15 @@ nav a {
     justify-content: flex-start;
     overflow-x: auto;
     gap: 2.4%;
-    padding: 4rem 2rem;
+    padding: var(--font-size-h2) var(--font-size-nav);
     max-width: 85vw;
     margin-left: 5%;
     scrollbar-width: none;
 }
 
 .testimonal {
-    background-color: white;
-    box-shadow: 0px 10px 15px 0px #7E616140;
+    background-color: var(--color-background);
+    box-shadow: var(--card-shadow);
     padding: 8% 2% 0 4.5%;
     min-width: 36.7rem;
     min-height: 44.4rem;
@@ -489,9 +521,9 @@ nav a {
 
 .review {
     font-weight: 400;
-    color: #6D7D8B;
+    color: var(--color-text-dark);
     padding: 0.5%;
-    font-size: 1.8rem;
+    font-size: var(--font-size-hero-p);
 }
 
 .profile {
@@ -503,15 +535,15 @@ nav a {
 
 .profile p {
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: var(--font-size-hero-p);
     font-weight: 600;
     padding-left: 5.5%;
     text-align: left;
-    color: #6D7D8B;
+    color: var(--color-text-dark);
 }
 
 .profile span {
-    font-size: 14px;
+    font-size: var(--font-size-mobile);
     font-weight: 400;
 }
 
@@ -527,15 +559,15 @@ nav a {
 
 /* Contact Section */
 .contact {
-    background-color: #F64C72;
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-background);
     text-align: center;
     padding: 5rem;
     margin-top: 8%;
 }
 
 .contact-head {
-    font-size: 4.8rem;
+    font-size: var(--font-size-h1);
     font-weight: 600;
     text-align: center;
     margin-top: 2%;
@@ -543,7 +575,7 @@ nav a {
 
 .contact-desc {
     font-family: Open Sans;
-    font-size: 2rem;
+    font-size: var(--font-size-nav);
     font-weight: 400;
     text-align: center;
     padding: 0 30rem 0 30rem;
@@ -552,14 +584,14 @@ nav a {
 .contact input {
     margin-top: 4%;
     width: 26.7rem;
-    padding: 2rem;
-    height: 4.8rem;
+    padding: var(--font-size-nav);
+    height: var(--font-size-h1);
     gap: 0px;
     border-radius: 4px 0px 0px 0px;
     border: 2px 0px 0px 0px;
     opacity: 0px;
     box-sizing: border-box;
-    font-size: 1.6rem;
+    font-size: var(--font-size-button);
     font-weight: 600;
     text-align: left;
 }
@@ -567,16 +599,8 @@ nav a {
 .contact input::placeholder {
     font-family: "Mulish", sans-serif;
     font-weight: 600;
-    color: #BBC8D4;
+    color: var(--color-text-light);
 }
-
-/* .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7rem 15rem 7rem 15rem;
-    background-color: #fff;
-} */
 
 .footer {
     display: grid;
@@ -590,10 +614,10 @@ nav a {
 
 .footer-left p {
     font-family: Open Sans;
-    font-size: 14px;
+    font-size: var(--font-size-mobile);
     font-weight: 400;
     text-align: left;
-    color: #553D67;
+    color: var(--color-primary);
 }
 
 .footer-left, .footer-right {
@@ -620,7 +644,7 @@ nav a {
     color: #000;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 120rem) {
     body {
         display: flexbox;
     }
@@ -644,19 +668,34 @@ nav a {
     .footer {
         padding: 5%;
     }
+
+}
+
+@media (max-width: 80rem) {
+    .container-box {
+        padding: var(--font-size-nav);   
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 30rem) {
+    .card {
+        width: 95%;
+    }
 }
 
 @media (max-width: 50rem) {
     .horizontal-line {
         display: none;
     }
-
+    
     .value-item {
         display: none;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60rem) {
     nav {
         display: none;
         flex-direction: column;
@@ -664,10 +703,10 @@ nav a {
         top: 6rem;
         right: 1rem;
         width: 50%;
-        background-color: white;
+        background-color: var(--color-background);
         padding: 1em;
     }
-
+    
     .menu-toggle:checked + .burger + nav {
         display: flex;
     }
@@ -677,8 +716,8 @@ nav a {
     }
 
     .logo {
-        width: 4.8rem;
-        height: 4.8rem;
+        width: var(--font-size-h1);
+        height: var(--font-size-h1);
     }
 
     .logo-flex {
@@ -696,12 +735,12 @@ nav a {
     }
     
     .hero h1 {
-        font-size: 4rem;
+        font-size: var(--font-size-h2);
         margin: 0 10% 0 10%;
     }
 
     .hero p {
-        font-size: 1.6rem;
+        font-size: var(--font-size-button);
         padding: 0 10% 0 10%;
     }
 
@@ -729,13 +768,9 @@ nav a {
     }
 
     .about-us p {
-        font-size: 1.6rem;
-        margin: 8% 0 0 0;
+        font-size: var(--font-size-button);
         line-height: 2.5rem;
-    }
-
-    .card {
-        width: 82vw;
+        margin: 8% 0 0 0;
     }
 
     .achievements {
@@ -749,7 +784,7 @@ nav a {
     
     .achiev-desc {
         transform: translateY(1.5rem);
-        font-size: 1.6rem;
+        font-size: var(--font-size-button);
         line-height: 3rem;
     }
 
@@ -758,11 +793,11 @@ nav a {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: var(--font-size-nav);
     }
 
     .description {
-        font-size: 1.6rem;
+        font-size: var(--font-size-button);
         padding: 1%;
     }
 
@@ -781,7 +816,7 @@ nav a {
     }
 
     .mission p, .contact-desc {
-        font-size: 1.6rem;
+        font-size: var(--font-size-button);
         line-height: 2.6rem;
     }
 
@@ -792,24 +827,10 @@ nav a {
     .contact input {
         margin-top: 20%;
         width: 26.7rem;
-        height: 4.8rem;
+        height: var(--font-size-h1);
     }
 
     .footer-left, .footer-right {
         justify-content: center;
     }
-}
-
-.achievement-box {
-    display: inline-block;
-    width: auto;
-}
-
-.achievement-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 3rem;
-    padding: auto;
-    max-width: 82vw;
-    margin: auto;
 }
