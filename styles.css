@@ -1,5 +1,6 @@
 :root {
     font-size: 10px;
+
     /* Font Sizes */
     --font-size-h1: 4.8rem;
     --font-size-h2: 4rem;
@@ -18,7 +19,6 @@
     /* Sizes */
     --card-shadow: 0px 10px 15px 0px #7E616140;
 }
-
 
 h1 {
     font-size: var(--font-size-h1);
@@ -86,7 +86,6 @@ nav a {
     height: 12rem;
     top: 0.2rem;
     left: 66.7rem;
-    gap: 0px;
 }
 
 
@@ -135,10 +134,8 @@ nav a {
     width: 32rem;
     padding: var(--font-size-nav);
     height: 5.6rem;
-    gap: 0px;
-    border-radius: 4px 0px 0px 0px;
-    border: 2px 0px 0px 0px;
-    opacity: 0px;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #BBC8D4;
     box-sizing: border-box;
     font-size: 1.6rem;
     font-weight: 600;
@@ -154,9 +151,8 @@ nav a {
 .hero button {
     width: 16.5rem;
     height: 5.6rem;
-    gap: 0px;
-    border-radius: 4px 0px 0px 0px;
-    opacity: 0px;
+    border: 0;
+    border-radius: 0.4rem;
     background-color: var(--color-secondary);
     color: var(--color-background);
     font-size: 1.6rem;
@@ -184,11 +180,11 @@ nav a {
 }
 
 .underline {
-    width: 15.7em;
-    height: 0.2em;
+    width: 15.7rem;
+    height: 0.2rem;
     background-color: var(--color-secondary);
     border: none;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 4rem auto;
 }
 
 .about-us p {
@@ -215,9 +211,9 @@ nav a {
     width: 4.9rem;
     height: 4.9rem;
     border-radius: 50%;
-    border: 2px solid var(--color-primary);;
+    border: 0.2rem solid var(--color-primary);;
     background-color: var(--color-background);
-    margin: 0 auto 10px;
+    margin: 0 auto 1rem;
 }
 
 .circle img {
@@ -241,7 +237,7 @@ nav a {
     left: 50%;
     transform: translateX(-50%);
     width: 80rem;
-    height: 1px;
+    height: 0.1rem;
     background-color: var(--color-primary);;
 }
 
@@ -327,7 +323,7 @@ nav a {
 
 .achievements h3 {
     font-size: 4em;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
 }
 
 .achievement-box {
@@ -412,7 +408,7 @@ nav a {
     margin-top: 6.5rem;
     padding: var(--font-size-hero-p) 3.6rem;
     background-color: var(--color-secondary);
-    border: 2px solid var(--color-background);
+    border: 0.2rem solid var(--color-background);
     border-radius: calc( var(--font-size-h2)/10);
     color: var(--color-background);
     cursor: pointer;
@@ -586,10 +582,8 @@ nav a {
     width: 26.7rem;
     padding: var(--font-size-nav);
     height: var(--font-size-h1);
-    gap: 0px;
-    border-radius: 4px 0px 0px 0px;
-    border: 2px 0px 0px 0px;
-    opacity: 0px;
+    border-radius: 0.4rem;
+    border: 0.2rem solid #BBC8D4;
     box-sizing: border-box;
     font-size: var(--font-size-button);
     font-weight: 600;
@@ -608,7 +602,7 @@ nav a {
     gap: 3rem;
     padding: auto;
     max-width: 82vw;
-    height: 20vh;
+    height: 17vh;
     margin: auto;
 }
 
@@ -633,14 +627,15 @@ nav a {
     justify-content: flex-end;
 }
 
-.footer-right a {
+.footer-right img {
     margin-right: 1.5rem;
     font-size: 2.5rem;
     color: #5b3b70;
     text-decoration: none;
 }
 
-.footer-right a:hover {
+.footer-right img:hover {
+    cursor: pointer;
     color: #000;
 }
 
@@ -682,6 +677,20 @@ nav a {
 @media (max-width: 30rem) {
     .card {
         width: 95%;
+    }
+
+    .teamcards {
+        display: grid;
+        gap: 3rem;
+        height: auto;
+        margin: auto;
+    }
+    
+    .teamcard {
+        min-width: auto;
+        min-height: auto;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -731,7 +740,7 @@ nav a {
     }
 
     .logo-flex p {
-        font-size: 5.96px;
+        font-size: 0.596rem;
     }
     
     .hero h1 {
