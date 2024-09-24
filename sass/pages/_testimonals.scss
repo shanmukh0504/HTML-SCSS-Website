@@ -1,0 +1,66 @@
+.test {
+	@include justify-column;
+	margin: 15rem 0 0 0;
+	h1 {
+		font-weight: 400;
+		color: $color_2;
+		position: relative;
+		@include responsive(mobile) {
+			font-size: 3rem;
+			text-align: center;
+		}
+	}
+}
+.testimonals {
+	display: flex;
+	justify-content: flex-start;
+	overflow-x: auto;
+	gap: 2.4%;
+	padding: $font-size-h2 $font-size-nav;
+	max-width: 85vw;
+	margin-left: 5%;
+	scrollbar-width: none;
+}
+.testimonal {
+	background-color: $color_1;
+	box-shadow: $card-shadow;
+	padding: 8% 2% 0 4.5%;
+	min-width: 36.7rem;
+	min-height: 44.4rem;
+	text-align: left;
+	height: auto;
+	box-sizing: border-box;
+	border-radius: 0.8rem;
+}
+.review {
+	font-weight: 400;
+	color: $color_6;
+	padding: 0.5%;
+	font-size: $font-size-hero-p;
+}
+.profile {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 15%;
+	p {
+		font-family: $font-family_3;
+		font-size: $font-size-hero-p;
+		font-weight: 600;
+		padding-left: 5.5%;
+		text-align: left;
+		color: $color_6;
+	}
+	span {
+		font-size: $font-size-mobile;
+		font-weight: 400;
+	}
+}
+.arrows {
+	width: 80%;
+	display: flex;
+	justify-content: flex-end;
+	img {
+		margin: 1.5%;
+	}
+}

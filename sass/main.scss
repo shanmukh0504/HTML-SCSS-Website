@@ -1,0 +1,29 @@
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/base";
+
+@import "components/aboutus-line";
+@import "components/circle";
+@import "components/underline";
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/footer";
+
+@import "pages/about";
+@import "pages/our-values";
+@import "pages/achievements";
+@import "pages/services";
+@import "pages/mission";
+@import "pages/team";
+@import "pages/testimonals";
+@import "pages/contact";
+
+@media (max-width: 50rem) {
+	.horizontal-line {
+		display: none;
+	}
+	.value-item {
+		display: none;
+	}
+}

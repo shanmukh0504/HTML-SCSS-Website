@@ -1,0 +1,48 @@
+.services {
+    margin: 13.3em 0 0 0;
+    @include responsive(mobile) {
+        margin-top: 0;
+    }
+    h2 {
+        font-family: $font-family_4;
+        font-size: $font-size-h1;
+        font-weight: 400;
+        text-align: center;
+        color: $color_2;
+        margin-top: 14%;
+        margin-bottom: $font-size-nav;
+        @include responsive(mobile) {
+            font-size: 3rem;
+        }
+    }
+}
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    padding: $font-size-h2 $font-size-nav;
+    max-width: 82vw;
+    margin: 0 auto;
+}
+.service-card {
+	background-color: $color_1;
+	box-shadow: $card-shadow;
+	padding: 1vw;
+	width: 36.7rem;
+	min-height: 29.6rem;
+	text-align: center;
+	height: auto;
+
+    @include responsive(tab) {
+        width: auto;
+    }
+}
+.description {
+	font-family: $font-family_2;
+	font-size: $font-size-hero-p;
+	color: $color_7;
+    @include responsive(mobile) {
+        font-size: $font-size-button;
+		padding: 1%;
+    }
+}

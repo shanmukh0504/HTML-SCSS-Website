@@ -1,0 +1,58 @@
+.achievements {
+	background-color: $background-color;
+	color: $color_1;
+	padding: 5rem 0;
+	text-align: center;
+	margin-top: -13rem;
+	min-height: 46.6em;
+	height: auto;
+	box-sizing: border-box;
+	@include responsive(mobile) {
+		transform: translateY(-4rem);
+		padding: 12rem 0rem;
+	}
+	h3 {
+		font-size: 4em;
+		margin-bottom: 1rem;
+		@include responsive(mobile){
+			font-size: 3rem;
+		}
+	}
+}
+.heading {
+	margin-top: 7%;
+}
+.achiev-desc {
+	font-size: $font-size-hero-p;
+	font-weight: 400;
+	color: $color_1;
+	flex-wrap: wrap;
+	margin: 0.7% 25% 0 25%;
+
+	@include responsive(tab) {
+		margin: 0.7% 10% 0 10%;
+	}
+	@include responsive(mobile) {
+		transform: translateY(1.5rem);
+		font-size: $font-size-button;
+		line-height: 3rem;
+	}
+}
+.achievement-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 3rem;
+	padding: auto;
+	max-width: 82vw;
+	margin: auto;
+}
+.achievement-box {
+	display: inline-block;
+	width: auto;
+	p {
+		font-family: $font-family_3;
+		font-size: $font-size-mobile;
+		font-weight: 600;
+		line-height: 2.1rem;
+	}
+}

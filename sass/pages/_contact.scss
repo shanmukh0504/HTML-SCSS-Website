@@ -1,0 +1,55 @@
+.contact {
+	background-color: $background-color;
+	color: $color_1;
+	text-align: center;
+	padding: 5rem;
+	margin-top: 8%;
+	input {
+		margin-top: 4%;
+		width: 26.7rem;
+		padding: $font-size-nav;
+		height: $font-size-h1;
+		border-radius: 0.4rem;
+		border: 0.2rem solid #BBC8D4;
+		box-sizing: border-box;
+		font-size: $font-size-button;
+		font-weight: 600;
+		text-align: left;
+		&::placeholder {
+			font-family: $font-family_1;
+			font-weight: 600;
+			color: $color_5;
+		}
+		@include responsive(mobile) {
+			margin-top: 10%;
+			width: 26.7rem;
+			height: $font-size-h1;
+		}
+	}
+}
+.contact-head {
+	font-size: $font-size-h1;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 2%;
+	@include responsive(mobile) {
+		font-size: 3rem;
+		text-align: center;
+	}
+}
+.contact-desc {
+	font-family: $font-family_3;
+	font-size: $font-size-nav;
+	font-weight: 400;
+	text-align: center;
+	padding: 0 30rem 0 30rem;
+
+	@include responsive(tab) {
+		padding: 0 3% 0 3%;
+	}
+	@include responsive(mobile) {
+		font-size: $font-size-button;
+		line-height: 2.6rem;
+		padding-top: 5%;
+	}
+}

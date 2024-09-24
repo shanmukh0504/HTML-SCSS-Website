@@ -1,0 +1,68 @@
+.hero {
+	background-image: url('../assets/Hero-bg.svg');
+	background-size: cover;
+	background-position: center;
+	min-height: 58.3rem;
+	height: auto;
+	color: $color_1;
+	text-align: center;
+	align-items: center;
+	h1 {
+		font-size: $font-size-h1;
+		font-weight: 800;
+		text-align: center;
+		@include responsive(mobile) {
+			font-size: $font-size-h2;
+			margin: 0 10% 0 10%;
+		}
+	}
+	p {
+		font-family: $font-family_2;
+		font-size: $font-size-hero-p;
+		font-weight: 700;
+		text-align: center;
+		@include responsive(mobile) {
+			font-size: $font-size-button;
+			padding: 0 10% 0 10%;
+		}
+	}
+	input {
+		width: 32rem;
+		padding: $font-size-nav;
+		height: 5.6rem;
+		border-radius: 0.4rem;
+		border: 0.2rem solid #BBC8D4;
+		box-sizing: border-box;
+		font-size: 1.6rem;
+		font-weight: 600;
+		text-align: left;
+		&::placeholder {
+			font-family: $font-family_1;
+			font-weight: 600;
+			color: $color_5;
+		}
+		@include responsive(mobile) {
+			width: 30rem;
+			height: 5.2rem;
+		}
+	}
+	button {
+		width: 16.5rem;
+		height: 5.6rem;
+		border: 0;
+		border-radius: 0.4rem;
+		background-color: $background-color;
+		color: $color_1;
+		font-size: 1.6rem;
+		font-weight: 700;
+		text-align: center;
+		@include responsive(mobile) {
+			margin-top: 5%;
+			width: 15.5rem;
+			height: 5.2rem;
+		}
+	}
+}
+.wrap {
+	max-width: 56.3em;
+}

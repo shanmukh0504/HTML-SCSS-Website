@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixins";
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	font-family: $font-family_1;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: $font-size-h1;
+}
+
+h2 {
+	font-size: $font-size-h2;
+}
+
+.justify {
+	@include justify;
+}
+
+.justify-column {
+	@include justify-column;
+}

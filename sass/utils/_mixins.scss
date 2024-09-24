@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin justify {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin justify-column {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint == tab {
+        @media (max-width: $breakpoint-tab) {
+            @content;
+        }
+    }
+    @if $breakpoint == mobile {
+        @media (max-width: $breakpoint-mobile) {
+            @content;
+        }
+    }
+    @if $breakpoint == card {
+        @media (max-width: calc($breakpoint-mobile / 2)) {
+            @content;
+        }
+    }
+}

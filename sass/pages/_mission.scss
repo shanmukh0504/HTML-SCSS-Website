@@ -1,0 +1,54 @@
+.mission {
+	@include justify;
+	margin: 15rem 0 0 0;
+	width: 100%;
+	@include responsive(mobile) {
+		margin-top: 5rem;
+	}
+	div {
+		background-color: $background-color;
+		color: $color_1;
+		height: 67rem;
+		padding: 0 10rem;
+		@include responsive(mobile) {
+			height: 100vh;
+			padding: 0;
+		}
+		h2 {
+			font-weight: 700;
+			@include responsive(mobile) {
+				font-size: 3rem;
+				text-align: center;
+			}
+		}
+		p {
+			font-size: $font-size-hero-p;
+			font-weight: 600;
+			text-align: center;
+			margin-top: 3.5rem;
+			padding-left: 6%;
+			padding-right: 6%;
+			@include responsive(mobile) {
+				font-size: $font-size-button;
+				line-height: 2.6rem;
+			}
+		}
+	}
+	button {
+		font-size: $font-size-button;
+		font-weight: 700;
+		margin-top: 6.5rem;
+		padding: $font-size-hero-p 3.6rem;
+		background-color: $background-color;
+		border: 0.2rem solid $color_1;
+		border-radius: calc($font-size-h2)/10;
+		color: $color_1;
+		cursor: pointer;
+	}
+
+	@include responsive(tab) {
+		img {
+			display: none;
+		}
+	}
+}

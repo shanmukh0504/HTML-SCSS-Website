@@ -1,0 +1,9 @@
+.horizontal-line {
+	position: absolute;
+	top: 2.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80rem;
+	height: 0.1rem;
+	background-color: $color-2;
+}

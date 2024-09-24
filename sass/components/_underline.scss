@@ -1,0 +1,10 @@
+.underline {
+	width: 15.7rem;
+	height: 0.2rem;
+	background-color: $background-color;
+	border: none;
+	margin: 0 auto 4rem auto;
+	@include responsive(mobile) {
+		margin-bottom: 8rem;
+	}
+}

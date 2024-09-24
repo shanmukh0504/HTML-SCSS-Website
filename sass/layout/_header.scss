@@ -1,0 +1,81 @@
+header {
+	color: $color_1;
+	text-align: center;
+	padding: $font-size-nav;
+}
+nav {
+	display: flex;
+	justify-content: center;
+	gap: 4.5rem;
+	margin-top: $font-size-nav;
+	a {
+		text-decoration: none;
+		font-family: $font-family_2;
+		font-size: $font-size-nav;
+		font-weight: 400;
+		text-align: center;
+		color: $color_2;
+	}
+
+	@include responsive(mobile) {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 6rem;
+		right: 1rem;
+		width: 50%;
+		background-color: $color_1;
+		padding: 1em;
+	}
+}
+.menu-toggle {
+	display: none;
+	@include responsive(mobile) {
+		&:checked+.burger+nav {
+			display: flex;
+		}
+	}
+}
+.burger {
+	display: none;
+	font-size: 2.5rem;
+	cursor: pointer;
+	color: $color_3;
+	@include responsive(mobile) {
+		display: block;
+	}
+}
+.logo {
+	width: 12rem;
+	height: 12rem;
+	top: 0.2rem;
+	left: 66.7rem;
+	@include responsive(mobile) {
+		width: $font-size-h1;
+		height: $font-size-h1;
+	}
+}
+.logo-flex {
+	@include responsive(mobile) {
+		display: flex;
+		justify-content: space-between;
+		p {
+			font-size: 0.596rem;
+		}
+	}
+}
+.logo-center {
+	@include responsive(mobile) {
+		display: flexbox;
+		justify-content: center;
+	}
+}
+.techno-fevers {
+	font-size: $font-size-hero-p;
+	font-weight: 700;
+	text-align: center;
+	background-image: linear-gradient(to right, $background-color 50.3%, $color-2 50%);
+	color: $color_4;
+	background-clip: text;
+	margin: 0;
+}

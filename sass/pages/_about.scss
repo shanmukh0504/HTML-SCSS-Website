@@ -1,0 +1,51 @@
+.about-us {
+	text-align: center;
+	padding: 5rem 2rem;
+	background-color: $color_1;
+	max-width: 96em;
+	min-height: 63.4em;
+	margin: -6em auto;
+	box-shadow: $card-shadow;
+	span {
+		font-size: $font-size-h1;
+		font-weight: 400;
+		color: $color_2;
+		margin-bottom: 1rem;
+		display: block;
+		@include responsive(mobile) {
+			font-size: 3rem;
+		}
+	}
+	p {
+		font-family: $font-family_2;
+		text-wrap: wrap;
+		max-width: 80rem;
+		margin: 0 14% 5% 14%;
+		font-size: $font-size-hero-p;
+		color: $color_6;
+		@include responsive(mobile) {
+			font-size: $font-size-button;
+			line-height: 2.5rem;
+			margin: 8% 0 0 0;
+		}
+	}
+}
+.values {
+	@include justify;
+	gap: 20rem;
+	margin-top: 4.5rem;
+	position: relative;
+}
+.value-item {
+	text-align: center;
+	z-index: 1;
+}
+.value-title {
+	font-family: $font-family_2;
+	width: 10.6rem;
+	height: 5.8rem;
+	font-size: $font-size-hero-p;
+	font-weight: 400;
+	text-align: left;
+	color: $color_6;
+}

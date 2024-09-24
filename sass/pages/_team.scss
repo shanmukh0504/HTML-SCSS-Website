@@ -1,0 +1,73 @@
+.team {
+	@include justify-column;
+	margin: 13.3rem 0 0 0;
+	h1 {
+		font-weight: 400;
+		color: $color_2;
+		position: relative;
+		@include responsive(mobile) {
+			font-size: 3rem;
+			text-align: center;
+		}
+	}
+}
+.teamcards {
+	display: flex;
+	justify-content: flex-start;
+	overflow-x: auto;
+	gap: 3.4%;
+	padding: $font-size-h2 $font-size-nav;
+	max-width: 85vw;
+	margin-left: 5%;
+	scrollbar-width: none;
+	@include responsive(card) {
+		display: grid;
+		gap: 3rem;
+		height: auto;
+		margin: auto;
+	}
+}
+.teamcard {
+	background-color: $color_1;
+	box-shadow: $card-shadow;
+	min-width: 33.7rem;
+	min-height: 50rem;
+	text-align: left;
+	height: auto;
+	box-sizing: border-box;
+	border-radius: 0.8rem;
+	img {
+		width: 100%;
+	}
+	@include responsive(card) {
+		min-width: auto;
+		min-height: auto;
+		width: auto;
+		height: auto;
+	}
+}
+.team-val {
+	padding: 5%;
+}
+.role {
+	font-weight: 600;
+	color: $color_6;
+	padding: 0.5%;
+	font-size: $font-size-mobile;
+}
+.team-desc {
+	font-family: $font-family_2;
+	font-size: $font-size-button;
+	color: $color_8;
+}
+.next {
+	width: 78%;
+	color: $color_2;
+	font-family: $font-family_3;
+	font-size: 2.178rem;
+	font-weight: 600;
+	text-align: right;
+	@include responsive(mobile) {
+		display: none;
+	}
+}
